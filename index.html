@@ -66,8 +66,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Talent</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -202,7 +202,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Skills Section ======= -->
+        <!-- ======= Skills Section ======= -->
     <!-- <section id="skills" class="skills">
       <div class="container" data-aos="fade-up">
 
@@ -354,6 +354,80 @@
       </div>
     </section><!-- End Clients Section -->
 
+      <!-- ======= Portfolio Section ========= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Talent</h2>
+            <h3>Our <span>Talent</span></h3>
+            <p>Berikut ini merupakan beberapa dokumentasi Talent kami dan Event yang pernah kami selenggarakan.</p>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-talent">Model/Talent</li>
+                <li data-filter=".filter-spg">SPG/Usher</li>
+                <li data-filter=".filter-event">Event</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <script>
+              const talentImages = [
+                "assets/img/talent/talent_utama.jpeg",
+                "assets/img/talent/talent1.jpeg",
+                "assets/img/talent/talent2.jpeg",
+                "assets/img/talent/talent3.jpeg",
+                "assets/img/talent/talent4.jpeg",
+                "assets/img/talent/talent5.jpeg",
+                "assets/img/talent/talent6.jpeg",
+                "assets/img/talent/talent7.jpeg",
+              ];
+  
+              const spgImages = [
+                "assets/img/spg/spg1.jpeg",
+                "assets/img/spg/spg2.jpeg",
+                "assets/img/spg/spg3.jpeg",
+                "assets/img/spg/spg4.jpeg",
+                "assets/img/spg/spg5.jpeg",
+                "assets/img/spg/spg6.jpeg",
+                "assets/img/spg/spg7.jpeg",
+  
+              ];
+  
+              for (let i = 0; i < talentImages.length; i++) {
+                document.write(`
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-talent">
+                    <img src="${talentImages[i]}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Talent ${i + 1}</h4>
+                      <p>Talent</p>
+                      <a href="${talentImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Talent ${i + 1}"><i class="bx bx-plus"></i></a>
+                      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                `);
+  
+                document.write(`
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-spg">
+                    <img src="${spgImages[i]}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>SPG ${i + 1}</h4>
+                      <p>SPG</p>
+                      <a href="${spgImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SPG ${i + 1}"><i class="bx bx-plus"></i></a>
+                      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                `);
+              }
+            </script>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio End -->
+
+
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
@@ -496,78 +570,7 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Portfolio Section ========= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Talent</h2>
-          <h3>Our <span>Talent</span></h3>
-          <p>Berikut ini merupakan beberapa dokumentasi Talent kami dan Event yang pernah kami selenggarakan.</p>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-talent">Model/Talent</li>
-              <li data-filter=".filter-spg">SPG/Usher</li>
-              <li data-filter=".filter-event">Event</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <script>
-            const talentImages = [
-              "assets/img/talent/talent_utama.jpeg",
-              "assets/img/talent/talent1.jpeg",
-              "assets/img/talent/talent2.jpeg",
-              "assets/img/talent/talent3.jpeg",
-              "assets/img/talent/talent4.jpeg",
-              "assets/img/talent/talent5.jpeg",
-              "assets/img/talent/talent6.jpeg",
-              "assets/img/talent/talent7.jpeg",
-            ];
-
-            const spgImages = [
-              "assets/img/spg/spg1.jpeg",
-              "assets/img/spg/spg2.jpeg",
-              "assets/img/spg/spg3.jpeg",
-              "assets/img/spg/spg4.jpeg",
-              "assets/img/spg/spg5.jpeg",
-              "assets/img/spg/spg6.jpeg",
-              "assets/img/spg/spg7.jpeg",
-
-            ];
-
-            for (let i = 0; i < talentImages.length; i++) {
-              document.write(`
-                <div class="col-lg-4 col-md-6 portfolio-item filter-talent">
-                  <img src="${talentImages[i]}" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Talent ${i + 1}</h4>
-                    <p>Talent</p>
-                    <a href="${talentImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Talent ${i + 1}"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              `);
-
-              document.write(`
-                <div class="col-lg-4 col-md-6 portfolio-item filter-spg">
-                  <img src="${spgImages[i]}" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>SPG ${i + 1}</h4>
-                    <p>SPG</p>
-                    <a href="${spgImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SPG ${i + 1}"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              `);
-            }
-          </script>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio End -->
+  
 
     <!-- ======= Team Section ======= -->
     <!-- <section id="team" class="team section-bg">
