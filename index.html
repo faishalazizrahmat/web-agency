@@ -28,9 +28,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Alfa Organizer
+  * Template Name: BizLand
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/Alfa Organizer-bootstrap-business-template/
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -66,8 +66,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Talent</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -201,6 +201,79 @@
 
       </div>
     </section><!-- End About Section -->
+
+    <!-- ======= Portfolio Section ========= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Talent</h2>
+          <h3>Our <span>Talent</span></h3>
+          <p>Berikut ini merupakan beberapa dokumentasi Talent kami dan Event yang pernah kami selenggarakan.</p>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-talent">Model/Talent</li>
+              <li data-filter=".filter-spg">SPG/Usher</li>
+              <li data-filter=".filter-event">Event</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <script>
+            const talentImages = [
+              "assets/img/talent/talent_utama.jpeg",
+              "assets/img/talent/talent1.jpeg",
+              "assets/img/talent/talent2.jpeg",
+              "assets/img/talent/talent3.jpeg",
+              "assets/img/talent/talent4.jpeg",
+              "assets/img/talent/talent5.jpeg",
+              "assets/img/talent/talent6.jpeg",
+              "assets/img/talent/talent7.jpeg",
+            ];
+
+            const spgImages = [
+              "assets/img/spg/spg1.jpeg",
+              "assets/img/spg/spg2.jpeg",
+              "assets/img/spg/spg3.jpeg",
+              "assets/img/spg/spg4.jpeg",
+              "assets/img/spg/spg5.jpeg",
+              "assets/img/spg/spg6.jpeg",
+              "assets/img/spg/spg7.jpeg",
+
+            ];
+
+            for (let i = 0; i < talentImages.length; i++) {
+              document.write(`
+                <div class="col-lg-4 col-md-6 portfolio-item filter-talent">
+                  <img src="${talentImages[i]}" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Talent ${i + 1}</h4>
+                    <p>Talent</p>
+                    <a href="${talentImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Talent ${i + 1}"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              `);
+
+              document.write(`
+                <div class="col-lg-4 col-md-6 portfolio-item filter-spg">
+                  <img src="${spgImages[i]}" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>SPG ${i + 1}</h4>
+                    <p>SPG</p>
+                    <a href="${spgImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SPG ${i + 1}"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              `);
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio End -->
 
     <!-- ======= Skills Section ======= -->
     <!-- <section id="skills" class="skills">
@@ -354,6 +427,8 @@
       </div>
     </section><!-- End Clients Section -->
 
+     
+
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
@@ -496,78 +571,7 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Portfolio Section ========= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Talent</h2>
-          <h3>Our <span>Talent</span></h3>
-          <p>Berikut ini merupakan beberapa dokumentasi Talent kami dan Event yang pernah kami selenggarakan.</p>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-talent">Model/Talent</li>
-              <li data-filter=".filter-spg">SPG/Usher</li>
-              <li data-filter=".filter-event">Event</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <script>
-            const talentImages = [
-              "assets/img/talent/talent_utama.jpeg",
-              "assets/img/talent/talent1.jpeg",
-              "assets/img/talent/talent2.jpeg",
-              "assets/img/talent/talent3.jpeg",
-              "assets/img/talent/talent4.jpeg",
-              "assets/img/talent/talent5.jpeg",
-              "assets/img/talent/talent6.jpeg",
-              "assets/img/talent/talent7.jpeg",
-            ];
-
-            const spgImages = [
-              "assets/img/spg/spg1.jpeg",
-              "assets/img/spg/spg2.jpeg",
-              "assets/img/spg/spg3.jpeg",
-              "assets/img/spg/spg4.jpeg",
-              "assets/img/spg/spg5.jpeg",
-              "assets/img/spg/spg6.jpeg",
-              "assets/img/spg/spg7.jpeg",
-
-            ];
-
-            for (let i = 0; i < talentImages.length; i++) {
-              document.write(`
-                <div class="col-lg-4 col-md-6 portfolio-item filter-talent">
-                  <img src="${talentImages[i]}" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Talent ${i + 1}</h4>
-                    <p>Talent</p>
-                    <a href="${talentImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Talent ${i + 1}"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              `);
-
-              document.write(`
-                <div class="col-lg-4 col-md-6 portfolio-item filter-spg">
-                  <img src="${spgImages[i]}" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>SPG ${i + 1}</h4>
-                    <p>SPG</p>
-                    <a href="${spgImages[i]}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SPG ${i + 1}"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              `);
-            }
-          </script>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio End -->
+   
 
     <!-- ======= Team Section ======= -->
     <!-- <section id="team" class="team section-bg">
@@ -904,7 +908,8 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <!-- <div class="footer-newsletter">
+
+    <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -916,18 +921,18 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Alfa Organizer<span>.</span></h3>
+            <h3>BizLand<span>.</span></h3>
             <p>
-              JL. Raya Pasar Minggu No.8, KM. 18 <br>
-              Pejaten Barat, Pasar Minggu, Jakarta Selatan, DKI Jakarta<br>
-              Indonesia <br><br>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
               <strong>Phone:</strong> +62 852-1994-9690<br>
               <strong>Email:</strong> Rendaalfaorganizer@gmail.com<br>
             </p>
@@ -936,28 +941,28 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Talent</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Sales Promotion Girl</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Usher</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">MC</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Event</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Kunjungi akun sosial media Kami!</p>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -973,13 +978,13 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Alfa Organizer</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Alfa Organizer-bootstrap-business-template/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
