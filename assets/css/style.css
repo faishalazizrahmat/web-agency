@@ -466,6 +466,15 @@ h6 {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  #hero {
+    height: 50vh;
+    /* Ubah tinggi sesuai kebutuhan untuk tampilan mobile */
+    background-position: center;
+    /* Posisi gambar latar tengah */
+  }
+}
+
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.6);
